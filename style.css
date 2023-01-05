@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    min-height: 100vh;
+    background: #cfe2f3;
+    color: #272727;
+    font-style: normal;
+    letter-spacing: 0;
+}
+/*navbar*/
+.logo-img{
+    height: 18vh;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 6px goldenrod);
+}
+nav{
+    background: #cfe2f3;
+    height: 120px;
+    width: 100%;
+}
+label.logo{
+    
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 3 5px;
+    margin-top: 12px;
+}
+nav ul li a{
+    color: #b84a54;
+    font-size: 17px;
+    padding: 8px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.active,a:hover{
+    background: #b84a54;
+    transition: .5s;
+    color: #022f69;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 968px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 875px){
+    .checkbtn{
+        display: block;
+  }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #5d3742;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color:  #cfe2f3;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/*navbar*/ 
+/*about us section*/ 
+
+#about-us{
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+    background:  #cfe2f3;
+}
+.aboutus-name{
+    color: #4b0000;
+}
+.pic{
+    height: auto;
+    width:  302px;
+}
+.about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text{
+    width: 540px;
+}
+.text h2{
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #b84a54;
+}
+.text h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+span{
+    color: #4070f4;
+}
+.text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color:  #5c4f58;
+}
+.hi{
+    margin-top: 30px;
+}
+.btn{
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #5d3742;
+    border: 1px solid #5d3742;
+}
+
+/*about us section*/
+
+
+/*banner part*/
+#banner-bgimg{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://www.scientificanimations.com/wp-content/uploads/2017/04/Life-Cycle-Of-Malarial-Parasite.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+}
+#banner-text{
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background: linear-gradient(to right, #00C5FF 0%, #6F8FE9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+/*banner part */
+
+/*footer*/
+
+#footer-logo{
+    height: 18vh;
+    filter: drop-shadow(3px 3px 6px goldenrod);
+}
+
+.space{
+    background-color: #5d3742;
+    height: auto;
+    position: relative;
+    color: #fff;
+}
+
+#footer-icon{
+    margin-top: 500px;
+}
+#info{
+    color: #8fc73e;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 18px;
+    margin-left: 650px;
+}
+
+.contact{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 550px;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.contact .contact-title h1{
+    color: #b84a54;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-form{
+    display: flex;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-box, .message{
+    width: 48%;
+}
+
+.input-box .input, .message textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #b84a54;
+    padding: 10px;
+    color: #b84a54;
+    width: 100%;
+}
+
+.message textarea{
+    height: 212px;
+}
+
+#contact-ph-email{
+    text-decoration: none;
+}
+
+.contact-btn{
+    background: gold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/*footer*/ 
+
+/*prevention and recover*/
+/*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}*/
+
+html {
+    background-color: #ecf9ff;
+}
+
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/*.btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+  }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: linear-gradient(to bottom left, #00C5FF 40%, #40ABFA 100%);
+}
+
+.card_content {
+    padding: 1rem;
+    
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+}
+.made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+/*prevention and recover*/

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/icon" href="images/favicon.ico"/>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    <style type="text/css">
+
+        body{
+          background: #443440;
+          font-family:tahoma;
+        }
+        .container{
+          background:#fff;
+          width:1100px;
+          margin:40px auto;
+          padding-top:15px;
+          box-shadow:0px 0px 20px 0px #444;
+          position:relative;
+        }
+        .container p{
+          text-align:center;
+        }
+        .container p:nth-child(1){
+          text-transform:uppercase;
+          color:#888;
+        }
+        .container p:nth-child(2){
+          font-weight:bolder;
+          font-size:20px;
+          margin:0  0 200px 0;
+          color:#444;
+        }
+        .container .product{
+          position:absolute;
+          width:1100px;
+          top:25%;
+        }
+        .container .productc{ 
+          text-align:center;
+        }
+
+        .container .product .item{
+          display:inline-block;
+          margin:5px;
+          width:250px;
+          background:#fff;
+          box-shadow:0px 0px 3px 0px #ccc;
+        }
+        .container .product .item img{
+          width:150px;
+          margin-top:5px
+        }
+        .container .product .item h3{
+          color:#444;
+        }
+        .container .product .item p{
+          margin:10px auto;
+          width:90%;
+        }
+        .item p:nth-of-type(1){
+          color: #443440; 
+          font-weight:bolder;
+        }
+        .item p:nth-of-type(2){
+          color:#888; 
+        }
+
+        .item .item_footer button{
+          float:right;
+          background:none;
+          border:1px solid #b84a54;
+          border-radius:10px;
+          padding:10px 15px;
+          margin:0 20px 20px;
+          color:#b84a54;
+        }
+        .item .item_footer button:hover{
+          transition: .2s ease-in-out all;
+          background:#b84a54;
+          border:1px solid #fff;
+          color:#fff;
+        }
+
+        .foot{
+          margin-top:100px;
+          background:#5d3742;
+          height:200px;
+        }
+ 
+
+  </style>
+</head>
+<body>
+  <!--header-->
+  <!--navbar-->
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">
+      <img src="images/logo.png" class="logo-img"> 
+    </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about_malaria.html">Symptoms</a></li>
+            <li><a href="prevent_recover.html">Solution</a></li>
+            <li><a href="aboutus.html">About Us</a> </li>
+        </ul>
+    </nav>
+  <!--navber-->
+  <!--header-->
+    <div class="container">
+        <p>Malaria is a serious and sometimes fatal disease caused by a parasite that commonly infects a certain type of mosquito which feeds on humans!</p>
+
+        <p>Symptoms</p>
+
+        <div class="product">
+            <div class="productc">
+                <div class="item">
+                    <h3>Fever</h3>
+                    <br>
+                    <p></p>
+                    <p>This fever may reach as high as 104 F (40 C) and last for a couple of days.</p>
+                    <br>
+                    <div class="item_footer">
+                        <a href="https://www.cdc.gov/malaria/about/faqs.html#:~:text=Malaria%20is%20a%20serious%20and,humans%3A%20Plasmodium%20falciparum%2C%20P."><button>MORE</button></a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3>Chills</h3>
+                    <br>
+                    <p></p>
+                    <p>These chills are another symptom that appears in the initial phase of the disease.</p>
+                    <br>
+                    <div class="item_footer">
+                        <a href="https://www.cdc.gov/malaria/about/faqs.html#:~:text=Malaria%20is%20a%20serious%20and,humans%3A%20Plasmodium%20falciparum%2C%20P."><button>MORE</button></a>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <h3>Headaches</h3>
+                    <br>
+                    <p></p>
+                    <p>Severe headaches sometimes occur along with the joint pain and fever.</p>
+                    <br>
+                    <div class="item_footer">
+                        <a href="https://www.cdc.gov/malaria/about/faqs.html#:~:text=Malaria%20is%20a%20serious%20and,humans%3A%20Plasmodium%20falciparum%2C%20P."><button>MORE</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+        </div>
+        <p></p>
+    </div>
+    <!--banner end-->
+
+    <!-- footer start -->
+  <footer id="footer">
+    <div class="space">
+      <div class="content">
+        <a class="navbar-brand mx-5" href="#home">
+          <img src="images/logo.png" alt="logo" id="footer-logo">
+        </a>
+        <!-- contact start -->
+        <div class="contact" id="contact">
+          <div class="contact-title">
+            <h1>Contact Us</h1>
+          </div>
+          <div class="contact-form">
+            <div class="input-box">
+              <input type="text" class="input" placeholder="Name">
+              <input type="text" class="input" placeholder="Email Address">
+              <input type="text" class="input" placeholder="Phone">
+              <p class="mt-3">Phone no: <a href="#" id="contact-ph-email">0945772285</a></p>
+              <p>Email   : <a href="#" id="contact-ph-email">chima@gmail.com</a></p>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message"></textarea>
+              <div class="contact-btn">send</div>
+            </div>
+          </div>
+        </div>
+        <!-- contact end -->
+
+        <!-- icon start -->
+        <div class="text-center" id="footer-icon">
+          <a href="#" class="btn btn-outline-info btn-floating m-2" role="button">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline-warning btn-floating m-2" role="button">
+            <i class="fab fa-google"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline-primary btn-floating m-2" role="button">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline-danger btn-floating m-2" role="button">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#" class="btn btn-outline-info btn-floating m-2" role="button">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <!-- icon end -->
+
+        <br/><br/>
+
+        <a href="https://codepen.io/trending" id="info">info@codepen.com</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+</body>
+</html>
